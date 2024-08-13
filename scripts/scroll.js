@@ -30,14 +30,10 @@ gsap.to(headerSubText, {
 
 
 document.querySelectorAll(".fade-right").forEach((element) => {
-    gsap.from(element, {
-        scrollTrigger:{
-            trigger: element,
-        },
+    gsap.fromTo(element, {
         opacity: 0,
         xPercent: -100
-    });
-    gsap.to(element, {
+    }, {
         scrollTrigger:{
             trigger: element,
             start: 'top 80%',
@@ -46,7 +42,7 @@ document.querySelectorAll(".fade-right").forEach((element) => {
         },
         opacity: 1,
         xPercent: 0
-    });
+    })
 });
 
 //#s-2 background change
@@ -115,14 +111,10 @@ gsap.fromTo("#s-3", {
 });
 
 document.querySelectorAll(".fade-bottom").forEach((element) => {
-    gsap.from(element, {
-        scrollTrigger:{
-            trigger: element,
-        },
+    gsap.fromTo(element, {
         opacity: 0,
         yPercent: -100
-    });
-    gsap.to(element, {
+    }, {
         scrollTrigger:{
             trigger: element,
             start: 'top 80%',
@@ -131,7 +123,7 @@ document.querySelectorAll(".fade-bottom").forEach((element) => {
         },
         opacity: 1,
         yPercent: 0
-    });
+    })
 });
 
 //s-5 scroll up and down
