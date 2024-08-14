@@ -7,14 +7,29 @@
     // font-display: swap;
 }
 
+@font-face {
+    font-family: 'impactium';
+    src: url("fonts/impact.ttf");
+}
 
+@import url('https://fonts.cdnfonts.com/css/impact');
+
+.one{
+    font-family: 'Impact';
+}
+.two{
+    font-family: 'impactium';
+}
+.three{
+    font-family: 'Impact', sans-serif;
+}
 
 html {
     scroll-behavior: smooth;
 }
 
 body{
-    font-family: 'Impact';
+    font-family: 'impactium';
     background-color: #000;
 }
 
