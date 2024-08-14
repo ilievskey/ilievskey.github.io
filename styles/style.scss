@@ -1,72 +1,6 @@
-@media (min-width: 1059px){
-    #s-5{
-        display: flex !important;
-    }
-    #s-5-too{
-        display: none !important;
-    }
-}
-@media (max-width: 1058px){
-    #s-5{
-        display: none !important;
-    }
-    #s-5-too{
-        display: flex !important;
-    }
-}
-@media (max-width: 768px){
-    #s-1{
-        #header-subtext{
-            font-size: 12vw !important;
-        }
-    }
-
-    #s-2{
-        #skillsList{
-            div{
-                h1{
-                    line-height: 1.4em !important;
-                }
-            }
-        }
-    }
-}
-@media (max-width: 480px){
-    .sleek-txt{
-        h1{
-            font-size: 5em !important;
-            color: white;
-            line-height: .5em;
-            margin: 0;
-        }
-        p{
-            font-size: 2.5em !important;
-            color: white;
-            line-height: 1.5em;
-            margin: 0;
-            overflow: hidden;
-        }
-    }
-
-    #s-2{
-        #skillsList{
-            div{
-                h1{
-                    line-height: 1.8em !important;
-                }
-            }
-        }
-    }
-
-    #s-6{
-        #interContainer{
-            color: #fff;
-            #inter{
-                opacity: 1;
-                font-size: 15vw !important;
-            }
-        }
-    }
+@font-face {
+    font-family: impactium;
+    src: url(/fonts/impact.ttf);
 }
 
 html {
@@ -74,7 +8,7 @@ html {
 }
 
 body{
-    font-family: 'Impact', sans-serif;
+    font-family: impactium;
     background-color: #000;
 }
 
@@ -261,6 +195,79 @@ section{
     }
 }
 
+
+
+//responsive
+@media (min-width: 1059px){
+    #s-5{
+        display: flex !important;
+    }
+    #s-5-too{
+        display: none !important;
+    }
+}
+@media (max-width: 1058px){
+    #s-5{
+        display: none !important;
+    }
+    #s-5-too{
+        display: flex !important;
+    }
+}
+@media (max-width: 768px){
+    #s-1{
+        #header-subtext{
+            font-size: 12vw !important;
+        }
+    }
+
+    #s-2{
+        #skillsList{
+            div{
+                h1{
+                    line-height: 1.4em !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px){
+    .sleek-txt{
+        h1{
+            font-size: 5em !important;
+            color: white;
+            line-height: .5em;
+            margin: 0;
+        }
+        p{
+            font-size: 2.5em !important;
+            color: white;
+            line-height: 1.5em;
+            margin: 0;
+            overflow: hidden;
+        }
+    }
+
+    #s-2{
+        #skillsList{
+            div{
+                h1{
+                    line-height: 1.8em !important;
+                }
+            }
+        }
+    }
+
+    #s-6{
+        #interContainer{
+            color: #fff;
+            #inter{
+                opacity: 1;
+                font-size: 15vw !important;
+            }
+        }
+    }
+}
 
 
 

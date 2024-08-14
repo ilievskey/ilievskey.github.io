@@ -4,9 +4,6 @@ const skillsList = document.getElementById('skillsList');
 const contact = document.getElementById("contact").querySelector('a');
 
 document.addEventListener("DOMContentLoaded", function(){
-    window.onresize = () => {
-        window.location.reload();
-    };
 
     setTimeout(() => {
         skillsList.style.opacity = 1;
