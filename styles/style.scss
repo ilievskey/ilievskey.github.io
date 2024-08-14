@@ -230,6 +230,14 @@ section{
             }
         }
     }
+
+    #s-6{
+        #interBg{
+            p{
+                -webkit-text-stroke: .5vw rgba($color: rgb(245, 245, 245), $alpha: .2) !important;
+            }
+        }
+    }
 }
 @media (max-width: 480px){
     .sleek-txt{
@@ -259,11 +267,6 @@ section{
     }
 
     #s-6{
-        #interBg{
-            p{
-                -webkit-text-stroke: .5vw rgba($color: rgb(245, 245, 245), $alpha: .2) !important;
-            }
-        }
         #interContainer{
             color: #fff;
             #inter{

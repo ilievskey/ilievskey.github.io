@@ -218,6 +218,9 @@ section {
   #s-2 #skillsList div h1 {
     line-height: 1.4em !important;
   }
+  #s-6 #interBg p {
+    -webkit-text-stroke: 0.5vw rgba(245, 245, 245, 0.2) !important;
+  }
 }
 @media (max-width: 480px) {
   .sleek-txt h1 {
@@ -235,9 +238,6 @@ section {
   }
   #s-2 #skillsList div h1 {
     line-height: 1.8em !important;
-  }
-  #s-6 #interBg p {
-    -webkit-text-stroke: 0.5vw rgba(245, 245, 245, 0.2) !important;
   }
   #s-6 #interContainer {
     color: #fff;
