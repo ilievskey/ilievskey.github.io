@@ -1,58 +1,13 @@
-@media (min-width: 1059px) {
-  #s-5 {
-    display: flex !important;
-  }
-  #s-5-too {
-    display: none !important;
-  }
-}
-@media (max-width: 1058px) {
-  #s-5 {
-    display: none !important;
-  }
-  #s-5-too {
-    display: flex !important;
-  }
-}
-@media (max-width: 768px) {
-  #s-1 #header-subtext {
-    font-size: 12vw !important;
-  }
-  #s-2 #skillsList div h1 {
-    line-height: 1.4em !important;
-  }
-}
-@media (max-width: 480px) {
-  .sleek-txt h1 {
-    font-size: 5em !important;
-    color: white;
-    line-height: 0.5em;
-    margin: 0;
-  }
-  .sleek-txt p {
-    font-size: 2.5em !important;
-    color: white;
-    line-height: 1.5em;
-    margin: 0;
-    overflow: hidden;
-  }
-  #s-2 #skillsList div h1 {
-    line-height: 1.8em !important;
-  }
-  #s-6 #interContainer {
-    color: #fff;
-  }
-  #s-6 #interContainer #inter {
-    opacity: 1;
-    font-size: 15vw !important;
-  }
+@font-face {
+  font-family: "Impact";
+  src: url("fonts/Impact.woff2") format("woff2"), url("fonts/Impact.woff") format("woff");
 }
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Impact", sans-serif;
+  font-family: "Impact";
   background-color: #000;
 }
 
@@ -240,6 +195,55 @@ section {
   border-bottom: #fff solid;
 }
 
+@media (min-width: 1059px) {
+  #s-5 {
+    display: flex !important;
+  }
+  #s-5-too {
+    display: none !important;
+  }
+}
+@media (max-width: 1058px) {
+  #s-5 {
+    display: none !important;
+  }
+  #s-5-too {
+    display: flex !important;
+  }
+}
+@media (max-width: 768px) {
+  #s-1 #header-subtext {
+    font-size: 12vw !important;
+  }
+  #s-2 #skillsList div h1 {
+    line-height: 1.4em !important;
+  }
+}
+@media (max-width: 480px) {
+  .sleek-txt h1 {
+    font-size: 5em !important;
+    color: white;
+    line-height: 0.5em;
+    margin: 0;
+  }
+  .sleek-txt p {
+    font-size: 2.5em !important;
+    color: white;
+    line-height: 1.5em;
+    margin: 0;
+    overflow: hidden;
+  }
+  #s-2 #skillsList div h1 {
+    line-height: 1.8em !important;
+  }
+  #s-6 #interContainer {
+    color: #fff;
+  }
+  #s-6 #interContainer #inter {
+    opacity: 1;
+    font-size: 15vw !important;
+  }
+}
 @keyframes introFade {
   0% {
     overflow: initial;

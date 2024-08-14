@@ -1,14 +1,20 @@
 @font-face {
-    font-family: impactium;
-    src: url(../fonts/impact.ttf);
+    font-family: 'Impact';
+    src: url('fonts/Impact.woff2') format('woff2'),
+        url('fonts/Impact.woff') format('woff');
+    // font-weight: normal;
+    // font-style: normal;
+    // font-display: swap;
 }
+
+
 
 html {
     scroll-behavior: smooth;
 }
 
 body{
-    font-family: impactium;
+    font-family: 'Impact';
     background-color: #000;
 }
 
