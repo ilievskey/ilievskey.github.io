@@ -52,6 +52,19 @@ document.addEventListener("DOMContentLoaded", function(){
         backgroundColor: "#212529"
     });
 
+    gsap.fromTo("#sleekDiv div",
+        {filter: "blur(0px)"},
+        {
+            filter: "blur(5px)",
+            scrollTrigger: {
+                trigger: "#sleekDiv div",
+                start: "top 20%",
+                end: "bottom top",
+                scrub: true,
+            }
+        }
+    );
+
     ScrollTrigger.matchMedia({
         "(min-width: 769px)": function() {
             let tlSkills = gsap.timeline({
