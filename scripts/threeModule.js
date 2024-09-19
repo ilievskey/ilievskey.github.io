@@ -7,8 +7,6 @@ import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 import { FXAAShader } from 'three/examples/jsm/shaders/FXAAShader.js';
 
 document.addEventListener("DOMContentLoaded", function(){
-
-    const startTime = performance.now();
     
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -40,9 +38,6 @@ document.addEventListener("DOMContentLoaded", function(){
     const loader = new GLTFLoader();
 
     loader.load('model/ambalageFont.glb', function (gltf) {
-        const endTime = performance.now();
-        const loadTime = endTime - startTime;
-        console.log(`Model loaded in ${loadTime} milliseconds`);
 
         const model = gltf.scene;
         scene.add(model);
