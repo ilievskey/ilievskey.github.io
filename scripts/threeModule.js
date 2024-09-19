@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const bloomPass = new UnrealBloomPass(
         new THREE.Vector2(containerWidth, containerHeight),
-        1.7,
+        .7,
         0.9,
         0.9
     );
@@ -37,13 +37,31 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const loader = new GLTFLoader();
 
-    loader.load('model/ambalageFont.glb', function (gltf) {
+    loader.load('model/ambalage.glb', function (gltf) {
 
         const model = gltf.scene;
         scene.add(model);
         model.position.set(0.25, 0, 0);
         model.scale.set(1, 1, 1);
         window.model = model;
+
+        function myFunc(media){
+            if(media.matches){
+                // document.body.style.background = "red";
+                camera.position.z = 10;
+            } else{
+                // document.body.style.background = "blue";
+                camera.position.z = 5;
+            }
+        }
+    
+        var media = window.matchMedia("(max-width: 768px)");
+    
+        myFunc(media);
+    
+        media.addEventListener("change", function(){
+            myFunc(media);
+        });
 
         // camera.position.z = 5;
 
@@ -75,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function(){
             new THREE.Vector3(.5, -12, .75),
             new THREE.Vector3(0, -9, 0),
             new THREE.Vector3(-14, 0, 0),
-            new THREE.Vector3(2, 0, 0)
+            new THREE.Vector3(1.5, 0, 0)
         ]);
         
         // Move model along the path based on scroll
@@ -89,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function(){
             model.position.copy(pointOnCurve);
 
             if(scrollPercent < 0.35){
-                model.rotation.set(0, scrollPercent * -Math.PI * .5, 0);
+                model.rotation.set(scrollPercent * -Math.PI * .05, scrollPercent * -Math.PI * .5, 0);
                 // model.rotation.y = Math.PI * .25;
             } else if(scrollPercent < .71){
                 model.rotation.set(0, scrollPercent * -Math.PI * 1.9, 0);
@@ -118,23 +136,5 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     animate();
-
-    function myFunc(media){
-        if(media.matches){
-            // document.body.style.background = "red";
-            camera.position.z = 10;
-        } else{
-            // document.body.style.background = "blue";
-            camera.position.z = 5;
-        }
-    }
-
-    var media = window.matchMedia("(max-width: 768px)");
-
-    myFunc(media);
-
-    media.addEventListener("change", function(){
-        myFunc(media);
-    });
 
 });
