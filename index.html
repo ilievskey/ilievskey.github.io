@@ -1,149 +1,128 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Ivan Ilievski</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
+<head>
+    <title>Ivan Ilievski</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        <link rel="stylesheet" href="styles/style.css">
-    </head>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <body>
-        <header>
-            <!-- place navbar here -->
-        </header>
-        <main>
+    <link rel="stylesheet" href="styles/style.css">
 
-            <section id="s-1" class="d-flex justify-content-center align-items-center flex-column">
-                <div class="d-flex justify-content-center flex-column vh-100">
-                    <div id="header-font">
-                        <h1 id="header-text" class="text-end">iVAN</h1>
-                        <h1 class="text-end">iLiEVSKi</h1>
-                    </div>
-                    <div id="header-sub">
-                        <h2 id="header-subtext" class="m-0">THE FULL-STACK DEV</h2>
-                    </div>
-                </div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.module.js",
+                "three/examples/jsm/loaders/GLTFLoader.js": "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/loaders/GLTFLoader.js",
+                "three/examples/jsm/postprocessing/EffectComposer.js": "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/postprocessing/EffectComposer.js",
+                "three/examples/jsm/postprocessing/RenderPass.js": "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/postprocessing/RenderPass.js",
+                "three/examples/jsm/postprocessing/UnrealBloomPass.js": "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/postprocessing/UnrealBloomPass.js",
+                "three/examples/jsm/postprocessing/ShaderPass.js": "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/postprocessing/ShaderPass.js",
+                "three/examples/jsm/shaders/FXAAShader.js": "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/shaders/FXAAShader.js"
+            }
+        }
+    </script>
 
-                <div class="d-flex justify-content-center align-items-center flex-column vh-100">
-                    <div class="sleek-txt">
-                        <p class="fade-right">SO...</p>
-                        <h1 class="fade-right">WHAT</h1>
-                        <p class="fade-right">DOES HE</p>
-                        <h1 class="fade-right">OFFER?</h1>
-                    </div>
-                </div>
-            </section>
+    <style>
+        #threejs-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+        }
+    </style>
+</head>
 
-            <section id="s-2">
-                <div id="sleekDiv" class="d-flex justify-content-center align-items-center flex-column vh-10">
-                    <div class="sleek-txt">
-                        <p class="fade-right">WiTH AN</p>
-                        <h1 class="fade-right">ARSENAL</h1>
-                        <p class="fade-right">OF</p>
-                        <h1 class="fade-right">SKiLLS</h1>
-                    </div>
-                </div>
-                <div id="skillsList" class="d-flex justify-content-center align-items-center flex-column">
-                    <div>
-                        <h1>Laravel</h1>
-                        <h1>Ajax & jQuery</h1>
-                        <h1>JavaScript</h1>
-                        <h1>PHP</h1>
-                        <h1>Bootstrap</h1>
-                        <h1>SCSS</h1>
-                        <h1>CSS</h1>
-                        <h1>HTML</h1>
-                    </div>
-                </div>
-            </section>
+<body>
+    <main>
+        <div id="threejs-container"></div>
 
-            <section id="s-3" class="d-flex justify-content-center align-items-center flex-column vh-100">
-                <div class="sleek-txt">
-                    <p class="fade-bottom">AND A GREAT<p>
-                    <h1 class="fade-bottom">EYE</h1>
-                    <p class="fade-bottom">FOR</p>
-                    <h1 class="fade-bottom">DETAiL</h1>
-                </div>
-            </section>
-
-            <section id="s-4" class="d-flex justify-content-center align-items-center flex-column">
-                <div class="sleek-txt">
-                    <p class="fade-bottom">HE HAS<p>
-                    <h1 class="fade-bottom">CRAFTED</h1>
-                    <p class="fade-bottom">iNCREDIBLE</p>
-                    <h1 class="fade-bottom">WEBSiTES</h1>
-                    <p class="fade-bottom">SUCH AS</p>
-                </div>
-            </section>
+        <section id="name" style="background-color: #ff00ff00; height: 150vh;" class="d-flex justify-content-center align-items-center flex-column">
             
-            <section id="s-5" class="overflow-hidden d-flex justify-content-center vh-100">
-                <div class="scroll-up">
-                    <img src="imgside/kinemoeWebScroll.png" alt="KineMoe Website">
-                </div>
-                <div class="scroll-down">
-                    <img src="imgside/labsWebScroll.png" alt="Brainster Labs Website">
-                </div>
-            </section>
+        </section>
 
-            <section id="s-5-too" class="overflow-hidden d-flex justify-content-center vh-100">
-                <div class="scroll-left">
-                    <img src="imgside/kinemoeMobileSide.png" alt="KineMoe Website">
-                </div>
-                <div class="scroll-right">
-                    <img src="imgside/labsWebSide.png" alt="Brainster Labs Website">
-                </div>
-            </section>
+        <section id="offer" class="d-flex justify-content-center align-items-center flex-column vh-100">
+            <div class="sleek-txt">
+                <p class="fade-bottom">SO...</p>
+                <h1 class="fade-bottom">WHAT</h1>
+                <p class="fade-bottom">ARE HiS</p>
+                <h1 class="fade-bottom">SKiLLS?</h1>
+            </div>
+        </section>
 
-            <section id="s-6" class="d-flex justify-content-center align-items-center vh-100">
-                <div id="interBg">
-                    <p>iNTERESTED</p>
-                    <p>iNTERESTED</p>
-                    <p>iNTERESTED</p>
-                    <p>iNTERESTED</p>
-                    <p>iNTERESTED</p>
-                    <p>iNTERESTED</p>
-                    <p>iNTERESTED</p>
-                    <p>iNTERESTED</p>
-                    <p>iNTERESTED</p>
-                </div>
-                <div id="interContainer" class="sleek-txt" style="position: relative;">
-                    <h1 id="inter">iNTERESTED?</h1>
-                    <p id="contact"><a href="mailto:ilievski1738@gmail.com">LET ME KNOW</a></p>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-        <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script> 
-        <script src="scripts/scroll.js"></script>
+        <section id="back" style="background-color: #0000ff00; height: 200vh;" class="d-flex justify-content-center align-items-center flex-column">
 
-    </body>
+        </section>
+
+        <section id="s-4" style="background-color: #00000000;" class="d-flex justify-content-center align-items-center flex-column">
+            <div class="sleek-txt">
+                <p class="fade-bottom">HE HAS</p>
+                <h1 class="fade-bottom">CRAFTED</h1>
+                <p class="fade-bottom">iNCREDIBLE</p>
+                <h1 class="fade-bottom">WEBSiTES</h1>
+                <p class="fade-bottom">SUCH AS</p>
+            </div>
+        </section>
+
+        <section id="s-5" class="overflow-hidden d-flex justify-content-center vh-100">
+            <div class="scroll-up">
+                <img src="imgside/kinemoeWebScroll.png" alt="KineMoe Website">
+            </div>
+            <div class="scroll-down">
+                <img src="imgside/labsWebScroll.png" alt="Brainster Labs Website">
+            </div>
+        </section>
+
+        <section id="s-5-too" class="overflow-hidden d-flex justify-content-center vh-100">
+            <div class="scroll-left">
+                <img src="imgside/kinemoeMobileSide.png" alt="KineMoe Website">
+            </div>
+            <div class="scroll-right">
+                <img src="imgside/labsWebSide.png" alt="Brainster Labs Website">
+            </div>
+        </section>
+
+        <section id="s-6" style="background-color: #ccff0000;" class="d-flex justify-content-center align-items-center vh-100">
+            <div id="interBg">
+                <p>READYREADY</p>
+                <p>READYREADY</p>
+                <p>READYREADY</p>
+                <p>READYREADY</p>
+                <p>READYREADY</p>
+                <p>READYREADY</p>
+                <p>READYREADY</p>
+                <p>READYREADY</p>
+                <p>READYREADY</p>
+            </div>
+            <div id="interContainer" class="sleek-txt" style="position: relative;">
+                <h1 id="inter">ARE YOU READY?</h1>
+                <p id="contact"><a href="mailto:ilievski1738@gmail.com">LET ME KNOW</a></p>
+            </div>
+        </section>
+        <script>
+        </script>
+    </main>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    
+    <script type="module" src="scripts/threeModule.js"></script>
+    <script src="scripts/scrollAnim.js"></script>
+
+</body>
+
 </html>

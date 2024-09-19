@@ -41,83 +41,18 @@ section{
     }
 }
 
-#s-1{
-    overflow: hidden;
-    #header-font{
-        h1{
-            animation: introFade .6s;
-            overflow: hidden;
-            margin: 0rem;
-            font-size: 24vw;
-            line-height: .82;
-            color: white;
-            transition: color .2s ease-in-out;
-            -webkit-text-stroke: .1vw whitesmoke;
-            cursor: default;
-            user-select: none;
-        }
-    }
-    
-    #header-subtext{
-        opacity: 0;
-        font-size: 6.5vw;
-        color: transparent !important;
-        transition: color .2s ease-in-out;
-        -webkit-text-stroke: .1vw whitesmoke;
-        user-select: none;
-
-        text-align: end;
-        padding-right: 1vw;
-        &:hover{
-            transition: color .2s ease-in-out;
-            cursor: default;
-            user-select: none;
-        }
-    }
-}
-
-#s-2{
-    background-color: #db434b;
-    #sleekDiv {
-        position: relative;
-        z-index: 1;
-        background-color: transparent;
-        height: 100vh;
-    }
-    
-    #skillsList{
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        overflow: hidden;
-        div{
-            h1{
-                font-size: 18vw;
-            }
-        }
-    }
-}
-
-#s-3{
-    background-color: #db434b;
-}
-
 #s-4{
     padding-top: 25vh;
     padding-bottom: 12vh;
     background-color: #fff;
-    .sleek-txt{
-        h1{
-            color: #212529;
-        }
-        p{
-            color: #212529;
-        }
-    }
+    // .sleek-txt{
+    //     h1{
+    //         color: #212529;
+    //     }
+    //     p{
+    //         color: #212529;
+    //     }
+    // }
 }
 
 #s-5{
