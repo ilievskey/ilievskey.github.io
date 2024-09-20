@@ -123,6 +123,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
     contact.addEventListener('mouseenter', () => contactAnim.play());
     contact.addEventListener('mouseleave', () => contactAnim.reverse());
+
+    window.scrollTo(0,0);
 });
 
 
