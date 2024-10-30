@@ -118,9 +118,9 @@ section {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  color: #fff;
 }
 #s-6 #interContainer #contact a {
+  color: #fff;
   text-decoration: none;
   border-bottom: #fff solid;
 }
